@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fitbunny website cfg project</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="index.css">
 
     <!-- Google font link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
 </head>
@@ -23,18 +28,37 @@
         <!-- Nav bar  -->
         <div class="nav-bar">
             <ul class="search">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
                 <li>Search</li>
             </ul>
 
             <div class="logo-container">
                 <img class="logo" src="images/logo.svg" alt="fitbunny logo">
             </div>
-                
-                <ul class="menu">
-                <li>Account</li>
-                <li>Wishlist</li>
-                <li>Cart</li>
-                </ul>
+
+            <ul class="menu">
+                <div class="account">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <li>Account</li>
+                </div>
+
+                <div class="wishlist">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                    <li>Wishlist</li>
+                </div>
+                <div class="cart">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    <li>Cart</li>
+                </div>
+            </ul>
         </div>
 
         <!-- Categories strip  -->
@@ -43,7 +67,7 @@
             <li>Latest products</li>
             <li>Activewear</li>
             <li>Supplements</li>
-            <li>Bestsellers</li>
+            <li><a href="bestseller.html">Bestsellers</a></li>
         </ul>
     </nav>
 
@@ -51,63 +75,283 @@
     <main>
         <!-- Hero section with image and cta  -->
         <div class="hero-section">
-            <!-- <img src="images/hero.png" alt="photo of fitness model wearing fitbunny and exercising"> -->
             <div class="cta-section">
-            <h1>Spring into action</h1>
-            <p class="subtitle">New season arrivals just for you.</p>
-            <button class="cta">Shop now</button>
+                <h1>Spring into action</h1>
+                <p class="subtitle">New season arrivals just for you.</p>
+                <button class="cta">Shop now</button>
             </div>
         </div>
 
         <!-- Comfy basics products section  -->
         <div class="products-section">
-
-            <!-- Carousel product slide  -->
             <div class="flex">
-            <div class="products-title">
-            <h2>Comfy basics</h2>
-            <p class="link">View all</p>
+                <div class="products-title">
+                    <h2>Comfy basics</h2>
+                    <p class="link">View all</p>
+                </div>
+            </div>
+
+            <!-- Bootstrap 5 carousel for larger screens (showing 4 cards at a time) -->
+            <div id="productCarousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="margin-slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="images/img1.png" class="card-img-top" alt="Cut out crop top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cut out crop top</h5>
+                                        <p class="card-text">£30.00</p>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/img2.png" class="card-img-top" alt="Long sleeve crop top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Long sleeve crop top</h5>
+                                        <p class="card-text">£40.00</p>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/img3.png" class="card-img-top" alt="Ultimate unitard">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ultimate unitard</h5>
+                                        <p class="card-text">£60.00</p>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/img4.png" class="card-img-top" alt="Cross back top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cross back top</h5>
+                                        <p class="card-text">£20.00</p>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="images/img5.png" class="card-img-top" alt="Sweatpants olive">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sweatpants</h5>
+                                        <p class="card-text">£70.00</p>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/img6.png" class="card-img-top" alt="Sweatpants grey">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sweatpants grey</h5>
+                                        <p class="card-text">£60.00</p>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/img7.png" class="card-img-top" alt="Biker shorts">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Biker shorts</h5>
+                                        <p class="card-text">£30.00</p>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/img8.png" class="card-img-top" alt="Hoodie">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hoodie</h5>
+                                        <p class="card-text">£45.00</p>
+                                        <button class="add-to-cart">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel1"
+                    data-bs-slide="prev">
+                    <div class="icon-border">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </div>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel1"
+                    data-bs-slide="next">
+                    <div class="icon-border">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </div>
+                </button>
+            </div>
+
+
+            <div class="nutrition-banner">
+                <div class="cta-section">
+                    <h1>Get your nutrition right</h1>
+                    <p class="subtitle">Explore our vegan protein powder options.<br>Formulated with healthy
+                        ingredients.</p>
+                    <button class="cta">Shop supplements</button>
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="images/we-offer.svg" alt="We offer">
+                <img src="images/free shipping.svg" alt="Free shipping">
+                <img src="images/points.svg" alt="Fitbunny rewards and points">
             </div>
 
         </div>
 
-            <div class="product-slider">
-                
-                <!-- Product cards need to add heart icons  -->
-
-                <div class="product-card">
-                    <img src="images/img1.png" alt="product description">
-                    <p class="product-name">Cut out crop top</p>
-                    <p class="price">£30.00</p>
-                    <button class="add-to-cart">Add to cart</button>
+        <!-- Bootstrap 5 carousel for larger screens (showing 4 cards at a time) -->
+        <div id="productCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="margin-slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/product1.png" class="card-img-top" alt="Vegan protein blend">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vegan protein blend</h5>
+                                    <p class="card-text">£20.00</p>
+                                    <button class="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/product2.png" class="card-img-top" alt="Strawberry protein">
+                                <div class="card-body">
+                                    <h5 class="card-title">Strawberry protein</h5>
+                                    <p class="card-text">£30.00</p>
+                                    <button class="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/product3.png" class="card-img-top" alt="Creatine gummies">
+                                <div class="card-body">
+                                    <h5 class="card-title">Creatine gummies</h5>
+                                    <p class="card-text">£12.00</p>
+                                    <button class="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/product4.png" class="card-img-top" alt="BCAA aminos peach">
+                                <div class="card-body">
+                                    <h5 class="card-title">BCAA aminos peach</h5>
+                                    <p class="card-text">£20.00</p>
+                                    <button class="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/product5.png" class="card-img-top" alt="Pre workout">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pre workout</h5>
+                                    <p class="card-text">£14.00</p>
+                                    <button class="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/product6.png" class="card-img-top" alt="Amino energy">
+                                <div class="card-body">
+                                    <h5 class="card-title">Amino Energy</h5>
+                                    <p class="card-text">£20.00</p>
+                                    <button class="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/product7.png" class="card-img-top" alt="Cashew protein bar">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cashew protein bar</h5>
+                                    <p class="card-text">£3.00</p>
+                                    <button class="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/product8.png" class="card-img-top" alt="Cashew protein bar">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cashew protein bar</h5>
+                                    <p class="card-text">£4.00</p>
+                                    <button class="add-to-cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="product-card">
-                    <img src="images/img2.png" alt="product description">
-                    <p class="product-name">Product</p>
-                    <p class="price">£00</p>
-                    <button class="add-to-cart">Add to cart</button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel2" data-bs-slide="prev">
+                <div class="icon-border">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </div>
-
-                <div class="product-card">
-                    <img src="images/img3.png" alt="product description">
-                    <p class="product-name">Product</p>
-                    <p class="price">£00</p>
-                    <button class="add-to-cart">Add to cart</button>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel2" data-bs-slide="next">
+                <div class="icon-border">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </div>
-
-                <div class="product-card">
-                    <img src="images/img4.png" alt="product description">
-                    <p class="product-name">Product</p>
-                    <p class="price">£00</p>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-
+            </button>
         </div>
+
 
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <!-- Column 1 -->
+                <div class="footer-column">
+                    <h5>Help</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">Make A Return</a></li>
+                        <li><a href="#">Orders</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="footer-column">
+                    <h5>My Account</h5>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer-column">
+                    <h5>Code First Girls</h5>
+                    <p class="Diana">
+                        Page created by <strong>
+                            <a href="www.linkedin.com/in/dianavlad69aw" title="Go to my LinkedIn">
+                                Diana
+                        </strong>
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Newsletter Form -->
+                <div class="footer-column newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and promotions.</p>
+                    <form>
+                        <input type="email" placeholder="Your email">
+                        <button class="cta" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
