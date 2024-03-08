@@ -40,14 +40,15 @@ li {
     font-weight: 600;
     font-size: smaller;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    text-align: center;
     padding: 1em;
 }
 
 /* Hero image */
 
 .hero-section {
-    margin-top: -0.4em;
+    margin-top: -1.29em;
     background-image: url(images/hero.png);
     background-repeat: no-repeat;
     height: 500px;
@@ -55,6 +56,7 @@ li {
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
+    background-size: cover;
 }
 
 .cta-section {
@@ -83,58 +85,232 @@ h1 {
     border: 0px;
 }
 
-/* Product slide  */
-
+/* Product card slide  */
 .products-section {
-    margin: 1em 2em;
-    margin-top: 3em;
+    margin: 4em 2em;
 }
 
-.products-title h2 {
-    font-weight: 500;
+.carousel-inner {
+    margin-top: 40px;
+}
+
+.card-title {
+    font-weight: 400;
 }
 .link {
     text-decoration: underline;
     margin-top: 10px;
 }
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 24px;
-}
-
-.arrow-imgs {
-    max-width: 30px;
-    margin-left: 8px;
-}
-
-.product-card img {
-    max-width: 14em;
-}
-
-.product-card {
-    display: flex;
-    flex-direction: column;
-    max-width: 14em;
-    gap: 8px;
-}
-
-.price {
+.card-text {
     font-weight: 600;
 }
 
 .add-to-cart {
-    padding: 8px;
+    padding: 8px 12px;
     background-color: rgb(18, 18, 18);
     color: white;
     font-weight: 600;
     border: 0px;
+    width: 14em;
 }
 
-.product-slider {
+.card {
+    max-width: 16em;
+}
+
+.card-group {
     display: flex;
-    gap: 2em;
+    gap: 1em;
+}
+
+.margin-slide {
+    margin: 5em;
+}
+
+.carousel-control-prev {
+    margin-left: -3em; /* Adjusted margin */
+}
+
+.carousel-control-next {
+    margin-right: -3em; /* Adjusted margin */
+}
+
+.icon-border {
+    background-color: black;
+    display: flex;
+    border-radius: 100%;
+    padding: 4px;
+} 
+
+/* Product images  */
+.card-img-top {
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 350px;
+}
+
+/* Protein powder section  */
+
+.nutrition-banner {
+    background-image: url(images/protein-powder-img.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: 4em;
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    margin-left: 0;
+    width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.carousel-inner .card {
+    border: none;
+}
+
+/* Footer  */
+footer {
+    background-color: rgba(147, 171, 216, 0.3); /* 50% opacity */
+    color: #1a1a1a; /* Dark font color */
+    padding: 60px 0px;
+    margin-top: 6em; /* 6em margin at the top */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.footer-column h5 {
+    font-size: 1em; /* Smaller font size */
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.newsletter {
+    flex: 1.5;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.newsletter button {
+    padding: 8px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul li a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.Diana {
+    font-size: 14px;
+}
+
+.Diana a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+/* Effects  */
+.cta,
+.add-to-cart {
+    padding: 8px 50px;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    font-weight: 600;
+    border: 0;
+    transition: background 0.3s ease; /* Add smooth transition effect */
+}
+
+/* Hover effect for the button */
+.cta:hover,
+.add-to-cart:hover {
+    background: linear-gradient(to right, #FFC282, #FFDADA, #93ABD8);
+    cursor: pointer;
+    color: #1a1a1a;
+}
+
+/* Icons */
+.search,
+.account,
+.wishlist,
+.cart {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Nav bar and Categories underline effect */
+nav ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #1a1a1a; /* Line color */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Add smooth transition effect */
+}
+
+nav ul li:hover::after {
+    width: 100%;
+    cursor: pointer;
+}
+
+.card-body {
+    margin-left: -10px;
+}
+
+.add-to-cart {
+    width: 14.5em;
 }
 
 
