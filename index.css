@@ -146,6 +146,12 @@ h1 {
 .card-img-top {
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     height: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    /* Add a slight scale effect on hover */
+    transform: scale(1.05);
 }
 
 /* Protein powder section  */
