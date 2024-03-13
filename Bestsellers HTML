@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitbunny</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="bestseller.css">
+
+     <!-- Google font link  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet">
+     <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+ 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ 
+</head>
+<body>
+    <!--Landing page nav bar-->
+    <nav>
+        <div class="nav-bar">
+            <ul class="search">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <li>Search</li>
+            </ul>
+
+            <div class="logo-container">
+                <img class="logo" src="images/logo.svg" alt="fitbunny logo">
+            </div>
+
+            <ul class="menu">
+                <div class="account">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <li>Account</li>
+                </div>
+
+                <div class="wishlist">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                    <li>Wishlist</li>
+                </div>
+                <div class="cart">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    <li>Cart</li>
+                </div>
+            </ul>
+        </div>
+        
+        <!-- Categories strip - linked to the main page  -->
+
+        <ul class="categories-strip">
+            <li><a href="index.html">Home</a></li>
+            <li>Latest products</li>
+            <li>Activewear</li>
+            <li>Supplements</li>
+        </ul>
+    </nav>
+
+    <!-- Best Sellers banner -->
+    <section class="hero-banner">
+        <img src="C:\Users\Rhian\OneDrive\Documents\Web Dev\PROJECT\Landing Page\images\bestselling.jpg" alt="Best Sellers">
+        <div class="cta-section">
+            <h1>Bestsellers</h1>
+            <p class="subtitle">What we're loving right now</p>
+            <button class="cta">Shop now</button>
+        </div>
+    </section>
+
+
+    <!-- Main content -->
+    <main>
+    <!-- Best selling products -->  
+        <section id="categories" class="categories">
+            <div class="category-grid">
+
+                <!-- Start of the first row -->
+                <div class="row"> 
+                    <!-- Product 1 -->
+                    <div class="category" onclick="location.href='category-vegan-protein-blend.html';">
+                        <img src="images/product1.png" class="card-img-top" alt="Vegan Protein Blend">
+                        <div class="card-body">
+                            <h5 class="card-title">Vegan Protein Blend</h5>
+                            <p class="card-text">£20.00</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                
+                    <!-- Product 2 -->
+                    <div class="category" onclick="location.href='category-strawberry-protein.html';">
+                        <img src="C:\Users\Rhian\OneDrive\Documents\Web Dev\PROJECT\Landing Page\images\03_FitWhey_Chocolate_c_97dce408-628e-430f-a8b0-95b42437360d_400x400_crop_top.webp" class="card-img-top" alt="Strawberry Protein">
+                        <div class="card-body">
+                            <h5 class="card-title">Whey Protein</h5>
+                            <p class="card-text">£30.00</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                
+                    <!-- Product 3 -->
+                    <div class="category" onclick="location.href='category-strawberry-protein.html';">
+                        <img src="images/product8.png" class="card-img-top" alt="Cashew Protein Bar">
+                        <div class="card-body">
+                            <h5 class="card-title">Cashew Protein Bar</h5>
+                            <p class="card-text">£4.00</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div> 
+                
+                 <!-- Start of the second row -->
+                 <div class="row"> 
+                    <div class="category" onclick="location.href='category-strawberry-protein.html';">
+                        <img src="images/product2.png" class="card-img-top" alt="Strawberry protein">
+                        <div class="card-body">
+                            <h5 class="card-title">Strawberry Protein</h5>
+                            <p class="card-text">£30.00</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                
+                    <div class="category" onclick="location.href='category-Creatine-Gummies.html';">
+                        <img src="images/product3.png" class="card-img-top" alt="Creatine gummies">
+                        <div class="card-body">
+                            <h5 class="card-title">Creatine Gummies</h5>
+                            <p class="card-text">£12.00</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                
+                    <div class="category" onclick="location.href='category-bcaa-aminos-peach.html';">
+                        <img src="images/product4.png" class="card-img-top" alt="BCAA aminos peach">
+                        <div class="card-body">
+                            <h5 class="card-title">BCAA Aminos - Peach</h5>
+                            <p class="card-text">£20.00</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div> 
+                </div>
+                 
+    
+                <!-- Start of the third row -->
+                <div class="row"> 
+                    <div class="category" onclick="location.href='category-pre-workout.html';">
+                        <img src="images/product5.png" class="card-img-top" alt="Pre workout">
+                        <div class="card-body">
+                            <h5 class="card-title">Pre Workout</h5>
+                            <p class="card-text">£14.00</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                
+                    <div class="category" onclick="location.href='category-amino-energy.html';">
+                        <img src="images/product6.png" class="card-img-top" alt="Amino energy">
+                        <div class="card-body">
+                            <h5 class="card-title">Amino Energy</h5>
+                            <p class="card-text">£20.00</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                
+                    <div class="category" onclick="location.href='category-cashew-protein-bar.html';">
+                        <img src="images/product7.png" class="card-img-top" alt="Cashew protein bar">
+                        <div class="card-body">
+                            <h5 class="card-title">Cashew Protein Bar</h5>
+                            <p class="card-text">£3.00</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    <!-- Offers banner -->
+        <section id="weOffer" class="offer-section">
+            <h2>We Offer</h2>
+            <div class="offer-item">Free shipping on orders over £50</div>
+            <div class="offer-item">Fitbunny loyalty point rewards</div>
+        </section>
+
+          <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                
+                <!-- Customer help point -->
+                <div class="footer-column">
+                    <h5>Help</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">Make A Return</a></li>
+                        <li><a href="#">Orders</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer account access -->
+                <div class="footer-column">
+                    <h5>My Account</h5>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Form -->
+                <div class="footer-column newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and promotions.</p>
+                    <form>
+                        <input type="email" placeholder="Your email">
+                        <button class="cta" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </main>
+    
+    <!-- Javascript - keeps the footer hidden until the customer scrolls to the bottom of the page -->
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.innerHeight + window.scrollY;
+            var documentHeight = document.body.offsetHeight;
+        
+            // Checks if the customer has scrolled to the bottom of the page
+            if (scrollPosition >= documentHeight) {
+                // Displays the footer
+                document.querySelector('footer').style.display = 'block';
+            } else {
+                // Hides the footer
+                document.querySelector('footer').style.display = 'none';
+            }
+        });
+        </script>
+</body>
+</html>
+
+
