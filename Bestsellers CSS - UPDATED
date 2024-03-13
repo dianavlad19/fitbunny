@@ -17,26 +17,22 @@
     padding-top: 12px;
 }
 
+/* Branding logo */
+
 .logo-container {
     display: flex;
     align-items: center;
+    max-height: 110px;
 }
-
-.top-header {
-    margin-right: 20px;
-}
-
-/* Branding logo */
 
 .logo {
-    flex: 1; 
     text-align: center;
     color: black;
     font-weight: bold;
     max-width: 120px;
-
+    height: 60px;
 }
-
+    
 .menu {
     display: flex;
     gap: 4em;
@@ -53,20 +49,6 @@
     margin-bottom: 0;
     margin-top: 20;
 }
-
-/* Best sellers banner */
-
-.hero-section {
-    margin-top: 2px;
-    background-repeat: no-repeat;
-    height: 10x;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-size: contain; 
-    background-position: center;
-}
-
 
 /* Text centered in the middle of the bestsellers banner */
 
@@ -132,9 +114,6 @@
     gap: 20px;
     padding: 20px;
     justify-content: center;
-    display: grid;
-    gap: 20px;
-    padding: 20px;
 }
 
 .category {
@@ -178,8 +157,7 @@
 /* Footer */
 /* Information and contacts*/
 
-footer {
-    position: absolute; 
+footer { 
     bottom: 0; 
     width: 100%;
     z-index: 1;
